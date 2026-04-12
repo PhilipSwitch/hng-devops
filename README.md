@@ -123,29 +123,13 @@ sudo -l -U hngdevops
 3. Visit `http://mobolaji-babajide.xyz` - Should auto-redirect to HTTPS
 4. Check certificate - Click padlock icon, verify Let's Encrypt issuer
 
-## 📁 Server File Structure
-/
-├── etc/
-│ ├── nginx/
-│ │ ├── nginx.conf
-│ │ └── sites-available/
-│ │ └── default (main config)
-│ ├── ssh/
-│ │ └── sshd_config (hardened SSH config)
-│ ├── letsencrypt/
-│ │ └── live/mobolaji-babajide.xyz/
-│ │ ├── fullchain.pem
-│ │ └── privkey.pem
-│ └── ufw/
-│ └── (firewall rules)
-├── var/
-│ └── www/
-│ └── html/
-│ └── index.html (custom page)
-└── home/
-└── hngdevops/
-└── .ssh/
-└── authorized_keys (grading bot key)
+## 📁 Key Server Files
+
+- `/etc/nginx/sites-available/default` - Nginx main configuration
+- `/etc/ssh/sshd_config` - SSH server configuration (hardened)
+- `/etc/letsencrypt/live/mobolaji-babajide.xyz/` - SSL certificates
+- `/var/www/html/index.html` - Custom HTML page
+- `/home/hngdevops/.ssh/authorized_keys` - Grading bot SSH key
 
 ## 🔐 Security Compliance Checklist
 
