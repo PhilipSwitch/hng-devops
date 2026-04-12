@@ -126,26 +126,26 @@ sudo -l -U hngdevops
 ## 📁 Server File Structure
 /
 ├── etc/
-│   ├── nginx/
-│   │   ├── nginx.conf
-│   │   └── sites-available/
-│   │       └── default (main config)
-│   ├── ssh/
-│   │   └── sshd_config (hardened SSH config)
-│   ├── letsencrypt/
-│   │   └── live/mobolaji-babajide.xyz/
-│   │       ├── fullchain.pem
-│   │       └── privkey.pem
-│   └── ufw/
-│       └── (firewall rules)
+│ ├── nginx/
+│ │ ├── nginx.conf
+│ │ └── sites-available/
+│ │ └── default (main config)
+│ ├── ssh/
+│ │ └── sshd_config (hardened SSH config)
+│ ├── letsencrypt/
+│ │ └── live/mobolaji-babajide.xyz/
+│ │ ├── fullchain.pem
+│ │ └── privkey.pem
+│ └── ufw/
+│ └── (firewall rules)
 ├── var/
-│   └── www/
-│       └── html/
-│           └── index.html (custom page)
+│ └── www/
+│ └── html/
+│ └── index.html (custom page)
 └── home/
-    └── hngdevops/
-        └── .ssh/
-            └── authorized_keys (grading bot key)
+└── hngdevops/
+└── .ssh/
+└── authorized_keys (grading bot key)
 
 ## 🔐 Security Compliance Checklist
 
